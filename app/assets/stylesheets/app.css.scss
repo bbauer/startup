@@ -81,12 +81,12 @@ a:hover {
 
 header {
   border-top:10px solid #333;
-  border-bottom:1px solid #e6e6e6;
+  border-bottom:1px solid #ccc;
   background: #f6f6f6;
-  background: -webkit-linear-gradient(#fff, #f6f6f6);
-  background: -moz-linear-gradient(#fff, #f6f6f6);
-  background: -ms-linear-gradient(#fff, #f6f6f6);
-  background: -o-linear-gradient(#fff, #f6f6f6);
+  background: -webkit-linear-gradient(#fff, #ddd);
+  background: -moz-linear-gradient(#fff, #ddd);
+  background: -ms-linear-gradient(#fff, #ddd);
+  background: -o-linear-gradient(#fff, #ddd);
 
   ul {
     list-style:none;
@@ -99,12 +99,13 @@ header {
 
   li {
     float:left;
-    margin-right:15px;
+    margin-right:25px;
     line-height: 2px;
 
     a,
     a:visited {
-      font-size:12px;
+      font-size:13px;
+      font-weight:bold;
       text-decoration:none;
       color:#555;
       text-shadow: 1px 1px 0 white;
@@ -122,28 +123,8 @@ section[role="banner"] {
   padding:25px 50px;
   background:#eee;
   height:300px;
-}
-
-section[role="banner"]:before,
-section[role="banner"]:after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  position: absolute;
-}
-section[role="banner"]:before {
-  border: 40px solid transparent;
-  border-bottom-color: #aaa;
-  top: -80px;
-  right: 100px;
-}
-section[role="banner"]:after {
-  border: 39px solid transparent;
-  border-bottom-color: #fff;
-  position: absolute;
-  top: -78px;
-  right: 101px;
+  border-bottom:1px solid #ddd;
+  /*background:url("carpet2.jpg") repeat-x bottom #eee;*/
 }
 
 section[role="banner"] img {
@@ -155,7 +136,7 @@ section[role="banner"] img {
 section[role="banner"] h3 {
   font-family: 'Open Sans', sans-serif;
   font-size:50px;
-  line-height:60px;
+  line-height:70px;
 }
 
 section[role="banner"] h3 em {
@@ -164,27 +145,27 @@ section[role="banner"] h3 em {
 
 .pricing {
   width:250px;
-  border-right:1px solid #eee;
-  padding:12px 30px 30px 30px;
-  margin-top:25px;
+  border-right:1px solid #ddd;
+  padding:0 30px 30px 30px;
+  margin-top:-10px;
   float:left;
 }
 
 #demos {
   position:absolute;
-  top:25px;
+  top:45px;
   left:290px;
 }
 
 #demos a {
-  margin-bottom:5px;
-  color:#555;
+  margin-bottom:0;
   font-size:20px;
   font-family: 'Open Sans', sans-serif;
-  padding:20px 30px;
+  padding:20px 70px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   border-radius: 7px;
+  line-height: 27px;
 }
 
 section[role="main"] {
@@ -192,12 +173,24 @@ section[role="main"] {
   padding:25px 50px;
 }
 
+section[role="main"] .container {
+  margin-top: 0px;
+}
+
+section[role="main"] ul {
+  margin: 20px 0 15px 10px;
+}
+
 section[role="main"] h1 {
+  font-size:30px;
   font-weight:normal;
+  border-bottom:1px solid #ddd;
+  padding-bottom:25px;
 }
 
 section[role="main"] h1 span {
-  color:#777;
+  font-color:#444;
+  font-weight:bold;
 }
 
 section[role="main"] li {
@@ -330,6 +323,13 @@ footer {
   background: linear-gradient(#00B4CC, #0293A6);
 }
 
+.blue:hover {
+  background: #00B4CC;
+  color:#fff;
+  text-decoration:none;
+}
+
+
 
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -349,4 +349,12 @@ footer {
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
+}
+
+footer {
+  background:#111;
+  min-height:200px;
+  color:#444;
+  padding-top:30px;
+  text-align:center;
 }
