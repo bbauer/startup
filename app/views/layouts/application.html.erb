@@ -4,12 +4,87 @@
     <title>Cleaners Dashboard</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400,700" %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
+    <header>
+      <div class="container">
+        <div id="logo">Cleaners <strong>Dashboard</strong></div>
+        <%= render :partial => 'partials/nav' %>
+      </div>
+    </header>
 
-    <%= yield %>
+    <section role="banner">
+      <div class="container">
+        <div id="get_some">
+          <h3>Fast<br />Easy<br /><em>&</em> Secure</h3>
+        </div>
 
+        <div id="demos">
+          <a href="#" class="button">View Demo</a><br />
+          <a href="#" class="button">View Pricing</a>
+        </div>
+
+        <%= image_tag("iphone.png") %>
+      </div>
+    </section>
+
+    <section role="main">
+      <div class="container">
+        <!--<h1>Manage your business...<br /><span>without the headaches</span></h1>-->
+
+        <div class="pricing">
+          <h2>Bronze</h2>
+
+          <ul>
+            <li>Feature 1</li>
+            <li class="no">Feature 2</li>
+            <li class="no">Feature 3</li>
+            <li class="no">Feature 4</li>
+            <li class="no">Feature 5</li>
+          </ul>
+
+          <a class="blue">View Plan</a>
+        </div>
+
+        <div class="pricing">
+          <h2>Silver</h2>
+
+          <ul>
+            <li>Feature 1</li>
+            <li class="no">Feature 2</li>
+            <li class="no">Feature 3</li>
+            <li class="no">Feature 4</li>
+            <li class="no">Feature 5</li>
+          </ul>
+
+          <a class="blue">View Plan</a>
+        </div>
+
+        <div class="pricing last">
+          <h2>Gold</h2>
+
+          <ul>
+            <li>Feature 1</li>
+            <li class="no">Feature 2</li>
+            <li class="no">Feature 3</li>
+            <li class="no">Feature 4</li>
+            <li class="no">Feature 5</li>
+          </ul>
+
+          <a class="blue">View Plan</a>
+        </div>
+
+        <div class="content"><%= yield %></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <%= render :partial => 'partials/footer' %>
+      </div>
+    </footer>
   </body>
 </html>
