@@ -1,4 +1,8 @@
 Service::Application.routes.draw do
+  match 'home', :to => 'home#index'
+
+  root :to => 'home#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
