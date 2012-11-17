@@ -1,0 +1,12 @@
+<%= semantic_form_for [:admin, @invoice] do |f| %>
+  <%= f.inputs :name => "Work Order Information" do %>
+    <%= f.input :service_date, :as => :just_datetime_picker %>
+  <% end %>
+
+  <table class="index_table">
+      <thead>
+      <tr><th>Service</th><th>Estimate</th><th>Actions</th></tr>
+      </thead>
+    </table>
+  <%= f.actions %>
+<% end %>

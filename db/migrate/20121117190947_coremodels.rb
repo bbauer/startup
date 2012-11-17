@@ -1,8 +1,8 @@
 class Coremodels < ActiveRecord::Migration
   def change
     create_table :customers do |t|
-      t.string :name
-      t.string :name2
+      t.string :first_name
+      t.string :last_name
       t.string :source
       t.timestamps
     end

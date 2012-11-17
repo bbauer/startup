@@ -1,0 +1,16 @@
+<h1><%= "#{@customer.first_name} #{@customer.last_name}" %></h1>
+<dl>
+  <dt>Address</dt>
+    <dd><%= @customer.address %></dd>
+    <dd><%= "#{@customer.city}, #{@customer.state} #{@customer.postal}" %></dd>
+  <dt>Phone</dt>
+    <dd><a href="tel:<%= @customer.phone %>"><%= @customer.phone %></a></dd>
+    <dd><a href="tel:<%= @customer.phone2 %>"><%= @customer.phone2 %></a></dd>
+  <dt>Email</dt>
+    <dd><a href="mailto:<%= @customer.email %>"><%= @customer.email %></a></dd>
+    <dd><a href="mailto:<%= @customer.email2 %>"><%= @customer.email2 %></a></dd>
+</dl>
+<h2>Invoice History</h2>
+<% if !@customer.invoices.empty? -%>
+
+<% end -%>

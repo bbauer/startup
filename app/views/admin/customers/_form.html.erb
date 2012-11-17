@@ -1,0 +1,21 @@
+<%= semantic_form_for [:admin, @customer] do |f| %>
+  <%= f.inputs :name => "Customer Information" do %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :phone %>
+    <%= f.input :phone2 %>
+    <%= f.input :email %>
+    <%= f.input :email2 %>
+  <% end %>
+  <%= f.inputs :name => "Address" do %>
+      <%= f.input :address %>
+      <%= f.input :city %>
+      <%= f.input :state %>
+      <%= f.input :postal %>
+      <%= f.input :sqft %>
+      <%= f.input :rooms %>
+      <%= f.input :has_pets %>
+      <%= f.input :has_stairs %>
+  <% end %>
+  <%= f.actions %>
+<% end %>

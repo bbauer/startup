@@ -19,6 +19,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
+gem "meta_search",    '>= 1.1.0.pre'
+gem "just-datetime-picker", "~> 0.0.5"
+
+
 gem 'jquery-rails'
 
 group :test, :development do
