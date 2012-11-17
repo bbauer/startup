@@ -23,6 +23,8 @@ gem 'jquery-rails'
 
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
+  gem 'factory_girl_rails'
+  gem 'shoulda', '>= 3.0.0.beta'
 end
 
 group :development, :test do
