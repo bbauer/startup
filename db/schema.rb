@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121118032934) do
+ActiveRecord::Schema.define(:version => 20121118033533) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -42,6 +42,16 @@ ActiveRecord::Schema.define(:version => 20121118032934) do
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false
     t.boolean  "super_duper",            :default => false
+    t.string   "logo_url"
+    t.string   "company_name"
+    t.string   "phone"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "postal"
+    t.string   "website"
+    t.string   "twitter"
+    t.string   "facebook"
   end
 
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
