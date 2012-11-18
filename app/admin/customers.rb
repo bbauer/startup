@@ -5,7 +5,6 @@ ActiveAdmin.register Customer do
   filter :email
   filter :phone
   filter :last_service_date
-  config.clear_action_items!
 
   controller do
     def create

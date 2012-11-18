@@ -1,5 +1,6 @@
 ActiveAdmin.register AdminUser do     
   menu :if => proc{ current_admin_user.super_duper? }
+  config.clear_action_items!
 
   controller do
     def index

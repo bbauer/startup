@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
+     <script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>
+<script type="text/javascript">
+  var tileUrl = 'http://a.tiles.mapbox.com/v3/examples.map-4l7djmvo/{z}/{x}/{y}.png'
+  var tileService = new L.TileLayer(tileUrl, {minZoom: 3, maxZoom: 17}),
+  map = new L.Map('map', {layers: [tileService], center: new L.LatLng(44.019064,-121.346567), zoom: 13});
+  <% current_admin_user.invoices.limit(5).map do |invoice| %>
+    <% next unless invoice.customer.latitude -%>
+    var marker = L.marker([<%= invoice.customer.latitude %>, <%= invoice.customer.longitude %>]).addTo(map);
+  <% end %>
+</script>
