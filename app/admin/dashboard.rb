@@ -3,9 +3,16 @@ ActiveAdmin.register_page "Dashboard" do
   menu :priority => 1, :label => proc{ I18n.t("active_admin.dashboard") }
 
   content :title => proc{ "Cleaner's Dashboard" } do
+    if current_admin_user
+
     columns do
        column do
-
+          panel "Welcome Back #{current_admin_user.first_name}!" do
+            p "Below you will find a snapshot of some important data that will help run your business more efficiently.  To update your company profile and other settings, please access the menu below:"
+            ul do
+              li link_to("Modify Company Information", edit_admin_admin_user_path(current_admin_user))
+            end
+          end
        end
     end
   #  div :class => "blank_slate_container", :id => "dashboard_default_message" do
@@ -35,5 +42,6 @@ ActiveAdmin.register_page "Dashboard" do
          end
        end
      end
+    end
   end # content
 end

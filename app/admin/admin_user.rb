@@ -73,6 +73,11 @@ ActiveAdmin.register AdminUser do
       f.input :password               
       f.input :password_confirmation  
     end                               
+    f.inputs "Personal Information" do       
+      f.input :first_name
+      f.input :last_name
+      f.input :phone
+    end 
     f.inputs "Company Information" do
       f.input :company_name
       f.input :address
