@@ -121,7 +121,7 @@ header {
 section[role="banner"] {
   clear:both;
   padding:25px 50px;
-  background: url("banner5.jpg") no-repeat center #eee;
+  background: url("banner7.jpg") no-repeat center #eee;
   height:300px;
   border-bottom:1px solid #ddd;
 }
@@ -137,24 +137,37 @@ section[role="banner"] h1 {
 section[role="cta"] {
   clear:both;
   padding:25px 50px;
-  height:300px;
+  height:220px;
   border-bottom:1px solid #ddd;
 }
 
 section[role="cta"] img {
   position:absolute;
   right:0;
-  top:-30px;
+  top:-115px;
+}
+
+section[role="cta"] img.arrow {
+  left: 75px;
+  top: -56px;
 }
 
 section[role="cta"] h3 {
   font-family: 'Open Sans', sans-serif;
   font-size:50px; 
   line-height:70px;
+  margin-top:15px;
 }
 
 section[role="cta"] h3 em {
   color:#aaa;
+}
+
+section[role="cta"] p {
+  font-family: 'Open Sans', sans-serif;
+  font-size:17px;
+  width:500px;
+  line-height:35px;
 }
 
 section[role="banner"] .blue {
@@ -164,6 +177,14 @@ section[role="banner"] .blue {
 section[role="banner"] label {
   font-family: 'Open Sans', sans-serif;
   font-size:17px;
+}
+
+section[role="banner"] {
+  clear:both;
+  padding:25px 50px;
+  background: url("banner8.jpg") no-repeat center #eee;
+  height:300px;
+  border-bottom:1px solid #ddd;
 }
 
 .pricing {
@@ -329,7 +350,8 @@ footer {
   transition: border-color 0.4s, color 0.4s;
 }
 
-.blue {
+.blue,
+.not_a_link {
   font-family: 'Open Sans', sans-serif;
   font-size:20px;
   color:#fff;
@@ -448,4 +470,14 @@ footer {
 
 section[role="main"] h1.interior {
   border:none;
+}
+
+.fade {
+  opacity:0.4;
+  filter:alpha(opacity=40);
+}
+
+.bait {
+  opacity:0.2;
+  filter:alpha(opacity=20);
 }
