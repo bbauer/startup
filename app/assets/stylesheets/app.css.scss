@@ -139,6 +139,12 @@ section[role="cta"] {
   padding:25px 50px;
   height:220px;
   border-bottom:1px solid #ddd;
+  background: #eee;
+  background: -webkit-linear-gradient(#fff, #eee);
+  background: -moz-linear-gradient(#fff, #eee);
+  background: -ms-linear-gradient(#fff, #eee);
+  background: -o-linear-gradient(#fff, #eee);
+
 }
 
 section[role="cta"] img {
@@ -229,7 +235,7 @@ section[role="main"] ul {
 section[role="main"] h1 {
   font-size:30px;
   font-weight:normal;
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid #f6f6f6;
   padding-bottom:25px;
 }
 
@@ -473,19 +479,15 @@ section[role="main"] h1.interior {
   border:none;
 }
 
-.fade {
-  opacity:0.4;
-  filter:alpha(opacity=40);
-}
-
 .bait {
-  opacity:0.15;
-  filter:alpha(opacity=15);
+  opacity:0.13;
+  filter:alpha(opacity=13);
 }
 
-.long {
+body .long {
   position: absolute;
   width: 100%;
-  top: 180px;
+  top:195px;
   z-index:999;
+  color:#fff;
 }
