@@ -1,4 +1,8 @@
 class AdminUser < ActiveRecord::Base
+  has_many :service_types
+  has_many :customers
+  has_many :invoices
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable

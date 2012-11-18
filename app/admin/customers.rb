@@ -1,9 +1,22 @@
 ActiveAdmin.register Customer do
+  scope_to :current_admin_user
   form :partial => "form"
   filter :last_name
   filter :email
   filter :phone
   filter :last_service_date
+
+  controller do
+    def create
+      params[:customer][:admin_user_id] = current_admin_user.id
+      super
+    end
+
+    def update
+      params[:customer][:admin_user_id] = current_admin_user.id
+      super
+    end
+  end
 
   index do
     column :last_name 
@@ -26,7 +39,7 @@ ActiveAdmin.register Customer do
   member_action :work_order do
     @customer = Customer.find(params[:id])
     @invoice = @customer.invoices.new
-    @service_types = @customer.service_types.collect{|s| [s.name,s.id] }
+    @service_types = current_admin_user.service_types
   end
   
   

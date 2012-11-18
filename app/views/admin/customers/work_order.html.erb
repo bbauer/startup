@@ -4,9 +4,14 @@
   <% end %>
 
   <table class="index_table">
-      <thead>
-      <tr><th>Service</th><th>Estimate</th><th>Actions</th></tr>
-      </thead>
-    </table>
+    <thead>
+      <tr><th>Service</th><th>Notes</th><th>Price</th></tr>
+    </thead>
+    <tbody>
+      <% @service_types.each do |service_type| -%>
+      <tr><td><%= service_type.name %></td><td></td><td></td></tr>
+      <% end -%>
+    </tbody>
+  </table>
   <%= f.actions %>
 <% end %>
