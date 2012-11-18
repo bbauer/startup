@@ -9,7 +9,7 @@
     </thead>
     <tbody>
       <% @service_types.each do |service_type| -%>
-      <tr><td><%= service_type.name %></td><td></td><td></td></tr>
+        <tr><td><%= service_type.name %></td><td><input maxlength="255" name="service_type_<%= service_type.id %>" type="text"></td><td></td></tr>
       <% end -%>
     </tbody>
   </table>

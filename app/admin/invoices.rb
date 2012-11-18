@@ -1,4 +1,4 @@
-ActiveAdmin.register Invoice, :as => "Work Order" do
+ActiveAdmin.register Invoice do
   scope_to :current_admin_user
 
   controller do
