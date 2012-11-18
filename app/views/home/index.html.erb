@@ -17,7 +17,7 @@
 
       <div class="field">
         <%= f.label "Enter your email for more info..." %><br />
-        <%= f.text_field :email %>
+        <%= f.text_field :email, {:placeholder => 'your@email.com' } %>
       </div>
 
       <div class="actions">
@@ -51,7 +51,7 @@
   <div class="container">
     <h1>Business on <span>your</span> terms...</h1>
 
-    <a href="#" class="blue long">Enter Your Email For More Info</a>
+    <a href="#" class="blue long" onclick="$('#lead_email').focus(); return true;">Enter Your Email For More Info</a>
 
     <div class="bait">
       <div class="pricing">
