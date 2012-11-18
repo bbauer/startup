@@ -4,7 +4,7 @@ class LeadsController < ApplicationController
 
     respond_to do |format|
       if @lead.save
-        format.html { redirect_to '/', :notice => 'Email was successfully created.' }
+        format.html { redirect_to '/pricing', :notice => 'Email was successfully created.' }
       end
     end
   end
