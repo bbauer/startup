@@ -354,9 +354,15 @@ footer {
   background: #00B4CC;
   color:#fff;
   text-decoration:none;
+  cursor:pointer;
 }
 
-
+.pricing_link {
+  position:absolute;
+  top:0;
+  right:0;
+  padding:20px 40px;
+}
 
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -386,10 +392,15 @@ footer {
   text-align:center;
 }
 
+.pricing_wrapper {
+  clear:both;
+}
+
 .pricing_wrapper th {
   font-size:20px;
   font-family: 'Open Sans', sans-serif;
 }
+
 .pricing_wrapper td,
 .pricing_wrapper th {
   padding:10px 30px;
@@ -405,7 +416,6 @@ footer {
 .pricing_wrapper td.second {
   text-align:center;
 }
-
 
 .pricing_wrapper td.check {
   background:url("signup_check.png") no-repeat center;
@@ -428,10 +438,13 @@ footer {
   text-align:center;
 }
 
+.pricing_wrapper td.total strong span {
+  color:#888;
+}
+
 .pricing_wrapper td.total strong {
   padding-bottom:12px;
 }
-
 
 section[role="main"] h1.interior {
   border:none;
