@@ -1,4 +1,5 @@
 Service::Application.routes.draw do
+  match 'leads', :to => 'leads#new'
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
