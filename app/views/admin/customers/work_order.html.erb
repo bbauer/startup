@@ -1,6 +1,7 @@
 <%= semantic_form_for [:admin, @invoice] do |f| %>
   <%= f.inputs :name => "Work Order Information" do %>
     <%= f.input :service_date, :as => :just_datetime_picker %>
+    <input type="hidden" name="invoice[customer_id]" value="<%= @customer.id %>">
   <% end %>
 
   <table class="index_table">
@@ -9,7 +10,7 @@
     </thead>
     <tbody>
       <% @service_types.each do |service_type| -%>
-        <tr><td><%= service_type.name %></td><td><input maxlength="255" name="service_type_<%= service_type.id %>" type="text"></td><td></td></tr>
+        <tr><td><%= service_type.name %></td><td><input maxlength="255" name="service_type_<%= service_type.id %>" type="text"></td><td><input maxlength="255" name="price_<%= service_type.id %>" type="text"></td></tr>
       <% end -%>
     </tbody>
   </table>
