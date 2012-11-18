@@ -19,6 +19,7 @@ ActiveAdmin.register Customer do
   end
 
   index do
+    column :id
     column :last_name 
     column :first_name
     column :phone
@@ -29,6 +30,7 @@ ActiveAdmin.register Customer do
 
   show :title => :display_name do
     render "show"
+    active_admin_comments
   end
 
   action_item :only => :show do
