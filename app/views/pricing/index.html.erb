@@ -1,50 +1,108 @@
 <section role="main">
   <div class="container">
-    <h1>Pricing</h1>
+    <h1 class="interior">Pricing</h1>
 
-    <div class="pricing">
-      <h2>Bronze</h2>
+    <div class="pricing_wrapper">
+      <table>
+        <tr>
+          <th></th>
+          <th>Bronze</th>
+          <th>Silver</th>
+          <th>Gold</th>
+        </tr>
 
-      <ul>
-        <li>Feature 1</li>
-        <li class="no">Feature 2</li>
-        <li class="no">Feature 3</li>
-        <li class="no">Feature 4</li>
-        <li class="no">Feature 5</li>
-      </ul>
+        <tr>
+          <td>Track customer info for # customers</td>
+          <td class="second">< 100</td>
+          <td class="second">< 500</td>
+          <td class="second">Unlimited</td>
+        </tr>
 
-      <a class="blue">Sign Up</a>
+        <tr>
+          <td>Track job history</td>
+          <td class="check">Yes</td>
+          <td class="check">Yes</td>
+          <td class="check">Yes</td>
+        </tr>
+
+        <tr>
+          <td>Track daily schedule</td>
+          <td class="check">Yes</td>
+          <td class="check">Yes</td>
+          <td class="check">Yes</td>
+        </tr>
+
+        <tr>
+          <td>Access customer, job, schedule information on mobile devices</td>
+          <td class="check">Yes</td>
+          <td class="check">Yes</td>
+          <td class="check">Yes</td>
+        </tr>
+
+        <tr>
+          <td>Schedule follow-up thank-yous, surveys, and reminders</td>
+          <td class="no_check">No</td>
+          <td class="check">No</td>
+          <td class="check">No</td>
+        </tr>
+
+        <tr>
+          <td>Collect payment, send invoice</td>
+          <td class="no_check">No</td>
+          <td class="check">No</td>
+          <td class="check">No</td>
+        </tr>
+
+        <tr>
+          <td>Display map/routing for daily jobs</td>
+          <td class="no_check">No</td>
+          <td class="check">No</td>
+          <td class="check">No</td>
+        </tr>
+
+        <tr>
+          <td>Auto display customer info on incoming call*</td>
+          <td class="no_check">No</td>
+          <td class="no_check">No</td>
+          <td class="check">No</td>
+        </tr>
+
+        <tr>
+          <td>Integrate with QuickBooks</td>
+          <td class="no_check">No</td>
+          <td class="no_check">No</td>
+          <td class="check">No</td>
+        </tr>
+
+        <tr>
+          <td>Customer targeting based on scheduled location</td>
+          <td class="no_check">No</td>
+          <td class="no_check">No</td>
+          <td class="check">No</td>
+        </tr>
+
+        <tr>
+          <td>Integrate with social media applications</td>
+          <td class="no_check">No</td>
+          <td class="no_check">No</td>
+          <td class="check">No</td>
+        </tr>
+
+        <tr>
+          <td>Schedule physical mailings*</td>
+          <td class="no_check">No</td>
+          <td class="no_check">No</td>
+          <td class="check ">No</td>
+        </tr>
+
+        <tr class="total">
+          <td></td>
+          <td class="total"><strong>Free!</strong<br /><a class="blue">Sign Up</a></td>
+          <td class="total"><strong>$47/mo</strong><br /><a class="blue">Sign Up</a></td>
+          <td class="total"><strong>$97/mo</strong><br /><a class="blue">Sign Up</a></td>
+        </tr>
+      </table>
     </div>
-
-    <div class="pricing">
-      <h2>Silver</h2>
-
-      <ul>
-        <li>Feature 1</li>
-        <li>Feature 2</li>
-        <li>Feature 3</li>
-        <li class="no">Feature 4</li>
-        <li class="no">Feature 5</li>
-      </ul>
-
-      <a class="blue">Sign Up</a>
-    </div>
-
-    <div class="pricing last">
-      <h2>Gold</h2>
-
-      <ul>
-        <li>Feature 1</li>
-        <li>Feature 2</li>
-        <li>Feature 3</li>
-        <li>Feature 4</li>
-        <li>Feature 5</li>
-      </ul>
-
-      <a class="blue">Sign Up</a>
-    </div>
-
-    <div class="content"><%= yield %></div>
   </div>
 </section>
 
