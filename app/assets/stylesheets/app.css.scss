@@ -195,12 +195,15 @@ section[role="main"] h1 span {
 
 section[role="main"] li {
   list-style:none;
-  background:url("http://www.inumbr.com/images/signup_check.png") no-repeat;
+  background:url("signup_check.png") no-repeat;
   padding-left:40px;
   text-align:left;
   line-height:25px;
 }
 
+section[role="main"] li.no {
+  background:url("signup_no_check.png") no-repeat;
+}
 
 footer {
   clear:both;
