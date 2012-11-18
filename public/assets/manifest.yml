@@ -11,10 +11,14 @@ iphone.png: iphone-b501be90157116ad7abc2aa176c02a5a.png
 iphone/index.png: iphone-b501be90157116ad7abc2aa176c02a5a.png
 rails.png: rails-e19cc14e7b458337c25b4a0b230d6cac.png
 rails/index.png: rails-e19cc14e7b458337c25b4a0b230d6cac.png
+signup_check.png: signup_check-2f24be1d2d30a9e855e93ccfe523813e.png
+signup_check/index.png: signup_check-2f24be1d2d30a9e855e93ccfe523813e.png
+signup_no_check.png: signup_no_check-b6cda22088269204226744fa1e6d48d7.png
+signup_no_check/index.png: signup_no_check-b6cda22088269204226744fa1e6d48d7.png
 application.js: application-43fb4d5136d275c60919b9e276e7c200.js
 application/index.js: application-43fb4d5136d275c60919b9e276e7c200.js
-application.css: application-277d3869633c75089791120f47f4d399.css
-application/index.css: application-277d3869633c75089791120f47f4d399.css
+application.css: application-64c2226fa6f566c1f77d6f3614576805.css
+application/index.css: application-64c2226fa6f566c1f77d6f3614576805.css
 active_admin/admin_notes_icon.png: active_admin/admin_notes_icon-6ebcce66abb69395d9c046059e17092e.png
 active_admin/admin_notes_icon/index.png: active_admin/admin_notes_icon-6ebcce66abb69395d9c046059e17092e.png
 active_admin/datepicker/datepicker-header-bg.png: active_admin/datepicker/datepicker-header-bg-072f4aa9c387de20d8b2402b38b4a365.png
