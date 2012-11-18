@@ -1,5 +1,6 @@
 Service::Application.routes.draw do
   match 'pricing', :to => 'pricing#index'
+  match 'demo', :to => 'demo#index'
   match 'leads', :to => 'leads#new'
 
   ActiveAdmin.routes(self)
