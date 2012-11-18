@@ -1,5 +1,7 @@
 Service::Application.routes.draw do
+  match 'pricing', :to => 'pricing#index'
   match 'leads', :to => 'leads#new'
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
