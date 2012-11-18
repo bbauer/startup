@@ -121,26 +121,49 @@ header {
 section[role="banner"] {
   clear:both;
   padding:25px 50px;
-  background:#eee;
+  background: url("banner4.jpg") no-repeat center #eee;
   height:300px;
   border-bottom:1px solid #ddd;
-  /*background:url("carpet2.jpg") repeat-x bottom #eee;*/
 }
 
-section[role="banner"] img {
+section[role="banner"] .container {
+  margin-top:0;
+}
+
+section[role="banner"] h1 {
+  margin-bottom:40px; 
+}
+
+section[role="cta"] {
+  clear:both;
+  padding:25px 50px;
+  height:300px;
+  border-bottom:1px solid #ddd;
+}
+
+section[role="cta"] img {
   position:absolute;
   right:0;
   top:-30px;
 }
 
-section[role="banner"] h3 {
+section[role="cta"] h3 {
   font-family: 'Open Sans', sans-serif;
-  font-size:50px;
+  font-size:50px; 
   line-height:70px;
 }
 
-section[role="banner"] h3 em {
+section[role="cta"] h3 em {
   color:#aaa;
+}
+
+section[role="banner"] .blue {
+  padding:20px 73px;
+}
+
+section[role="banner"] label {
+  font-family: 'Open Sans', sans-serif;
+  font-size:17px;
 }
 
 .pricing {

@@ -18,29 +18,35 @@
 
     <section role="banner">
       <div class="container">
+        <h1>Your Carpet Cleaning business on the go.</h1>
+
         <%= form_for(@lead) do |f| %>
           <% if @lead.errors.any? %>
             <div id="error_explanation">
-              <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this foo from being saved:</h2>
+              <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this email from being saved:</h2>
 
               <ul>
-              <% @lead.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-              <% end %>
+                <% @lead.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+                <% end %>
               </ul>
             </div>
           <% end %>
 
           <div class="field">
-            <%= f.label :email %><br />
+            <%= f.label "Enter your email for more info..." %><br />
             <%= f.text_field :email %>
           </div>
 
           <div class="actions">
-            <%= f.submit %>
+            <%= f.submit "Sign Up", :class => 'blue' %>
           </div>
         <% end %>
+      </div>
+    </section>
 
+    <section role="cta">
+      <div class="container">
         <div id="get_some">
           <h3>Fast<br />Easy<br /><em>&</em> Secure</h3>
         </div>
