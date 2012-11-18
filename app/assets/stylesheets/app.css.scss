@@ -9,8 +9,8 @@ section, header, footer {
   display:block;
 }
 
-h1 {
-  font-size:60px;
+body h1 {
+  font-size:35px;
   color:#444;
   font-family: 'Open Sans', sans-serif;
 }
@@ -131,7 +131,7 @@ section[role="banner"] .container {
 }
 
 section[role="banner"] h1 {
-  margin-bottom:40px; 
+  margin-bottom:10px; 
 }
 
 section[role="cta"] {
@@ -161,6 +161,7 @@ section[role="cta"] h3 {
 
 section[role="cta"] h3 em {
   color:#aaa;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section[role="cta"] p {
@@ -478,6 +479,13 @@ section[role="main"] h1.interior {
 }
 
 .bait {
-  opacity:0.2;
-  filter:alpha(opacity=20);
+  opacity:0.15;
+  filter:alpha(opacity=15);
+}
+
+.long {
+  position: absolute;
+  width: 100%;
+  top: 180px;
+  z-index:999;
 }
