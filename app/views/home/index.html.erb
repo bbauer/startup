@@ -29,16 +29,20 @@
 
 <section role="cta">
   <div class="container">
+    <%= image_tag "arrow_small.png", :class => 'arrow' %>
+
     <div id="get_some">
-      <h3>Fast<br />Easy<br /><em>&</em> Secure</h3>
+      <h3>Fast, Easy <em>&</em> Secure</h3>
     </div>
 
+    <!--
     <div id="demos">
       <a href="#" class="blue">View Demo</a><br />
       <a href="#" class="blue">View Pricing</a>
     </div>
+    -->
 
-    <%= image_tag("iphone.png") %>
+    <%= image_tag("iphone2.png") %>
   </div>
 </section>
 
@@ -46,50 +50,48 @@
   <div class="container">
     <h1>Business on <span>your</span> terms...</h1>
 
-    <div class="pricing">
-      <h2>Bronze</h2>
+    <div class="fade">
+      <div class="pricing">
+        <h2>Bronze</h2>
 
-      <ul>
-        <li>Feature 1</li>
-        <li class="no">Feature 2</li>
-        <li class="no">Feature 3</li>
-        <li class="no">Feature 4</li>
-        <li class="no">Feature 5</li>
-      </ul>
+        <ul>
+          <li>Feature 1</li>
+          <li class="no">Feature 2</li>
+          <li class="no">Feature 3</li>
+          <li class="no">Feature 4</li>
+          <li class="no">Feature 5</li>
+        </ul>
 
-      <a class="blue">View Plan</a>
+        <div class="blue">View Plan</div>
+      </div>
+
+      <div class="pricing">
+        <h2>Silver</h2>
+
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+          <li class="no">Feature 4</li>
+          <li class="no">Feature 5</li>
+        </ul>
+
+        <div class="blue">View Plan</div>
+      </div>
+
+      <div class="pricing last">
+        <h2>Gold</h2>
+
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+          <li>Feature 4</li>
+          <li>Feature 5</li>
+        </ul>
+
+        <div class="blue">View Plan</div>
+      </div>
     </div>
-
-    <div class="pricing">
-      <h2>Silver</h2>
-
-      <ul>
-        <li>Feature 1</li>
-        <li>Feature 2</li>
-        <li>Feature 3</li>
-        <li class="no">Feature 4</li>
-        <li class="no">Feature 5</li>
-      </ul>
-
-      <a class="blue">View Plan</a>
-    </div>
-
-    <div class="pricing last">
-      <h2>Gold</h2>
-
-      <ul>
-        <li>Feature 1</li>
-        <li>Feature 2</li>
-        <li>Feature 3</li>
-        <li>Feature 4</li>
-        <li>Feature 5</li>
-      </ul>
-
-      <a class="blue">View Plan</a>
-    </div>
-
-    <div class="content"><%= yield %></div>
   </div>
-  </section>
-
-<p>Your carpet cleaning business on the go.</p>
+</section>
