@@ -156,11 +156,18 @@ section[role="cta"] h3 {
   font-family: 'Open Sans', sans-serif;
   font-size:50px; 
   line-height:70px;
-  margin-top:50px  ;
+  margin-top:15px;
 }
 
 section[role="cta"] h3 em {
   color:#aaa;
+}
+
+section[role="cta"] p {
+  font-family: 'Open Sans', sans-serif;
+  font-size:17px;
+  width:500px;
+  line-height:35px;
 }
 
 section[role="banner"] .blue {
@@ -343,7 +350,8 @@ footer {
   transition: border-color 0.4s, color 0.4s;
 }
 
-.blue {
+.blue,
+.not_a_link {
   font-family: 'Open Sans', sans-serif;
   font-size:20px;
   color:#fff;
@@ -467,4 +475,9 @@ section[role="main"] h1.interior {
 .fade {
   opacity:0.4;
   filter:alpha(opacity=40);
+}
+
+.bait {
+  opacity:0.2;
+  filter:alpha(opacity=20);
 }
