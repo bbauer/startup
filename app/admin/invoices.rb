@@ -1,5 +1,6 @@
 ActiveAdmin.register Invoice do
   scope_to :current_admin_user
+  menu :label => 'Work Orders'
 
   controller do
     def create
