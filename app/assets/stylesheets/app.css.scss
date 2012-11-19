@@ -130,6 +130,12 @@ section[role="banner"] .container {
   margin-top:0;
 }
 
+section[role="banner"] .container p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  margin-top:30px;
+}
+
 section[role="banner"] h1 {
   margin-bottom:10px; 
 }
@@ -481,8 +487,8 @@ section[role="main"] h1.interior {
 }
 
 .bait {
-  opacity:0.13;
-  filter:alpha(opacity=13);
+  opacity:0.30;
+  filter:alpha(opacity=30);
 }
 
 body .long {
